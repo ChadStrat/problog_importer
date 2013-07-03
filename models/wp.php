@@ -98,6 +98,7 @@ class CreateBlogPost extends Model {
 	public function setContent($p){
 		$bt = BlockType::getByHandle('content');
 		$content = $this->wp_post->content;
+		$content = str_replace("\n",'<br/>',$content);
 		$data = array('content' => $content);		
 		$p->addBlock($bt, 'Main', $data);
         $block = $p->getBlocks('Main');
