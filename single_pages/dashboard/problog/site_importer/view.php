@@ -48,6 +48,7 @@ global $c;
 					<select name="source_type" id="source_type">
 						<option value="wp"><?=t('Wordpress')?></option>
 						<option value="feedburner"><?=t('Feedburner')?></option>
+						<option value="c5_xml"><?=t('C5 xml')?></option>
 					</select>
 				</div>
 			</div>
